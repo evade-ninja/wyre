@@ -18,3 +18,5 @@ From your target system, open a command prompt and change to the directory where
 wyre has been written to allow compatibility with Windows XP. As such, one must install the optional Visual Studio feature for "Windows XP support for C++". If this dependency is not met, Visual Studio will complain about missing build dependencies. This component is installed using the Visual Studio Installer - as of VS2017, this component is available from within the installer proper.
 
 Google's protobuf must also be installed. Instructions for installing protobuf can be found at https://github.com/google/protobuf/blob/master/src/README.md. It is important to note that installing the protobuf libraries necessatate installing Microsoft's experimental vcpkg tool (https://github.com/Microsoft/vcpkg). Installing and compiling protobuf can take a long time.
+
+Currently, the project will not run when compiling under the "Debug" profile - you must use the "Release" profile.
